@@ -1,0 +1,180 @@
+
+/* General style for the whole main website */
+
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Animations to be used for the various headers that are going to identify the pages. */
+
+@keyframes header1 {
+    0% {color: transparent;}
+    100% {color: white;}
+}
+
+@keyframes header2 {
+    0% {color: transparent;}
+    50% {color: transparent;}
+    100% {color:white;}
+}
+
+@keyframes buttonani {
+    0% {background-position:left;}
+    100% {background-position:right;}
+}
+
+
+
+.bg { 
+    background-image: url("background4.jpg");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment:fixed;
+}
+
+/* Logout button styling  */
+/* Making the logout button text invisible so that it can fit on smaller screens.  */
+
+a.button1 {
+    color:transparent;
+    width: 10%;
+    height:10%;
+    padding:0; 
+    margin-top:20px;
+    margin-right:20px;
+    border: none;
+    text-align:right;
+    text-decoration: none;
+    display: inline-block;
+    position:absolute;
+    top:0;
+    right:0;
+    font-size: 0px;
+    font-family: "Roboto";
+
+    box-shadow: 0 0 5px 2px black;
+    background-color: #ffffff3f;
+    border: 1px solid #ababab00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+    background-image: url("GoogleIcons/ic_lock_black_24px.svg");
+    background-repeat: no-repeat;
+    background-position: left;
+
+
+}
+
+a.button1:hover {
+    background-color: #504e551e;
+    animation-name: buttonani;
+    animation-duration: 2s;
+}
+
+h1 {
+    width:75%;
+    font-size:50px;
+    position: static;
+    text-align: center;
+    padding-top: 100px;
+    font-family: "Lato";
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    animation-name: header1;
+    animation-duration: 5s;
+    
+    
+}
+h2{
+    
+    position: static;
+    font-size: 25px;
+    font-family: "Lato";
+    text-align: center;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    animation-name: header2;
+    animation-duration: 5s;
+    
+}
+
+h3{
+    position: static;
+    font-size: 35px;
+    font-family: "Lato";
+    text-align: center;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top:20px;
+    margin-bottom:40px;
+    animation-name: header2;
+    animation-duration: 2s;
+    
+}
+
+h4{
+    position: static;
+    font-size: 35px;
+    font-family: "Lato";
+    text-align: center;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+
+.text-box {
+    float: left;
+    font-family: "Rubik";
+    width: 45%;
+    height: 750px;
+    margin-left: 50px;
+    margin-top:50px;
+    background-color: rgba(255, 255, 255, 0.884);
+    border: 5px solid #616161a1;
+    border-radius: 10px 10px;
+}
+
+.images {
+    width: 30%;
+    height: 30%;
+    float:right;
+    margin-right: 50px;
+    margin-top:50px;
+    border: 5px solid #616161a1;
+    border-radius: 10px 10px;
+}
+
+/* Adjustment for bigger screens using Media function */ 
+
+@media screen and (min-width: 650px) {
+
+    /* Adjusting the design of the logout button for bigger screens.  */
+    a.button1{
+        padding: 15px 25px;
+        margin-right:10px;
+        color:white;
+        font-size:15px;
+        text-align:center;
+        height:auto;
+    }
+
+    h1{
+        font-size: 100px;
+    }
+
+}
+
+
+
+
+
+

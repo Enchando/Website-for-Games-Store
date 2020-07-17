@@ -1,0 +1,145 @@
+
+/* Styling for the login page, including animations and the form to be used. */
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+/* Animation to be used for the main "user logo" which appears above the form. */
+
+@keyframes imganimation {
+    0% {width: 0%; height: 0%;}
+    30% {width: 16%; height: 16%; transform: rotate(180deg);}
+    50% {width: 8%; height: 8%; transform: rotate(-180deg);}
+    100% {width: 30%; height: 30%;}
+}
+
+/* Animation for the title that will appear after the above animation has finished. */
+
+@keyframes titleani {
+    0% {color: transparent; text-shadow: 2px 2px 8px transparent;}
+    50% {color: transparent; text-shadow: 2px 2px 8px transparent;}
+    80% {color: white; text-shadow: 2px 2px 8px transparent;}
+    100% {color: white; text-shadow: 2px 2px 8px black;}
+}
+
+.maintitle{
+    font-family: "Rubik";
+    font-size: 30px;
+    text-align: center;
+    position: static;
+    font-style: oblique;
+    text-shadow: 2px 2px 8px black;
+    animation-name: titleani;
+    animation-duration: 4s;
+}
+
+
+body{
+    background-image: url("background2.png");
+    height: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+/* Form styling for the input, which is going to be the main house style for later forms. */
+
+form {  
+    width: 90%;
+    margin: auto;
+    box-shadow: 0 0 10px 10px #fff;
+    background: #ffffffa6;
+    position: static;
+    border: 1px solid #ababab00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#parent {
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+ }
+ #form_login {
+    text-align: center;
+    vertical-align: middle;
+ }
+
+
+p {
+    position: static;
+    font-family: "Lato";
+    color: white;
+    font-size: 20px;
+}
+
+/* Form styling for inputs. */
+
+input {
+    height: 20%;
+    width: 60%;
+    text-align: left;
+    padding: 15px 30px;
+    margin: 10px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    font-family: "Lato";
+    font-size: 15px;
+
+}
+/* Including the relevant images to be placed in the input bar for extra style. */
+
+input[type = "text"] {
+    background-image: url("GoogleIcons/ic_person_black_24px.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+input[type = "password"] {
+    background-image: url("GoogleIcons/ic_lock_black_24px.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+input:focus {
+    border: 2px solid #555;
+}
+
+.submitlogin {
+    text-align: center;
+}
+
+.picture {
+    width: 30%;
+    height: 15%;
+    margin-top: 100px;
+    animation-name: imganimation;
+    animation-duration: 1.5s;
+
+}
+
+/* Adjustment for bigger screens using Media function */
+
+@media screen and (min-width: 650px) {
+
+    /* For bigger screens, the animation can be smaller otherwise it takes up too much of the page. */
+
+    @keyframes imganimation {
+        0% {width: 0%; height: 0%;}
+        30% {width: 8%; height: 8%; transform: rotate(180deg);}
+        50% {width: 4%; height: 4%; transform: rotate(-180deg);}
+        100% {width: 15%; height: 15%;}
+    }
+
+    form {
+        width: 40%;
+    }
+
+    .picture{
+        width: 15%;
+    }
+}

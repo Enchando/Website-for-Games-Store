@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    width:75%;
+    list-style:none;
+    padding:0;
+    margin: 0 auto;
+    text-align:center;
+    box-shadow: 0 0 5px 2px #fff;
+    background-color: #ffffffa6;
+    border: 1px solid #ababab00;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    overflow:hidden;
+}
+
+.nav a {
+    width: 20%;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    display:inline-block;
+}
+
+
+.dropdown {
+    float:left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    margin:0;
+    background-color: inherit;
+    font-family: "Roboto"; 
+    text-align:center;
+    text-decoration:none;
+    display: inline-block;
+
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgba(78, 78, 78, 0.473);
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-family: "Roboto";
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+.homepage {
+    background-image: url("ic_home_white_18px.svg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    font-family: "Lato";
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+}
+
+.homepage:hover {
+    background-color: rgba(78, 78, 78, 0.473);
+    font-weight: bold;
+}
+
+.datapage {
+    background-image: url("ic_library_books_white_18px.svg");
+    background-position: left;
+    background-repeat: no-repeat;
+    font-family: "Lato";
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    display: flex;
+
+    font-size: 16px; 
+    border: none;
+    outline: none;
+    margin:0;
+
+}
+
+.datapage:hover {
+    background-color: rgba(78, 78, 78, 0.473);
+    font-weight: bold;
+}
